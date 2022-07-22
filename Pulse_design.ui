@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>599</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pulse</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>LogoPulse.ico</normaloff>LogoPulse.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="schoolDiaryTabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <attribute name="title">
+        <string>      Расписание      </string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QTreeWidget" name="schoolScheduleTreeWidget">
+            <column>
+             <property name="text">
+              <string notr="true">1</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="addLessonInSchoolScheduleButton">
+            <property name="text">
+             <string>Добавить урок</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTreeWidget" name="freeScheduleTreeWidget">
+            <column>
+             <property name="text">
+              <string notr="true">1</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="addOccupationButton">
+            <property name="text">
+             <string>Добавить задачу</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>      Дневник      </string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="leftScreen2Layout">
+          <item>
+           <widget class="QListWidget" name="listOfLessonsListWidget"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="addLessonInListButton">
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Добавить урок</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="rightScreen2Layout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="lessonInformationLayout">
+            <item>
+             <widget class="QLabel" name="lessonInformationLabel">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Сведения об уроке:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="nameOfCurrentLessonLabel">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="homeworkLayout">
+            <item>
+             <widget class="QLabel" name="homeworkLabel">
+              <property name="text">
+               <string>Домашнее задание:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="changeHomeworkLabel">
+              <property name="text">
+               <string>Нет</string>
+              </property>
+              <property name="margin">
+               <number>25</number>
+              </property>
+              <property name="indent">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="changeHomeworkPushButton">
+              <property name="text">
+               <string>Изменить домашнее задание</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="averageScoreLayout">
+            <item>
+             <widget class="QLabel" name="averageScoreConstantLabel">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Средний балл:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="averageScoreLabel">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="marksLabel">
+            <property name="text">
+             <string>Оценки:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="marksListWidget"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="addMarkPushButton">
+            <property name="text">
+             <string>Добавить оценку</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
